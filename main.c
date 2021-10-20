@@ -35,6 +35,12 @@ void bsh_loop(void) {
       } while (status);
 }
 
+#define BSH_RL_BUFSIZE 1024
+char *bsh_read_line(void) {
+      int bufsize = BSH_RL_BUFSIZE;
+      int position = 0;
+}
+
 int main(int argc, char **argv) {
       // 1. load any config files
 
